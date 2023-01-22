@@ -7,17 +7,20 @@ while(!isAwake){}
 Start();
 while(!isStart){}
 setInterval(() => Update(), 1/PS);
+console.log('Update is running...');
 
 function Awake(){
-  
+
+  console.log('Awake Done.');
   isAwake = true;
 }
 
 function Start(){
-  
+
+  console.log('Start Done.');
   isStart = true;
 }
 
 function Update(){
-  console.log('deltatime' + (1/PS));
+  //console.log('deltatime' + (1/PS));
 }
