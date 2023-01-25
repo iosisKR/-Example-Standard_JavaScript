@@ -2,13 +2,16 @@
 let isAwake = false;
 let isStart = false;
 let PS = 60; //1초에 몇번 실행될지
+///<<System>>///
 Awake();
 while(!isAwake){}
 Start();
 while(!isStart){}
 setInterval(() => Update(), 1/PS);
 console.log('Update is running...');
+////////////////
 
+///<<Functions>>
 function Awake(){
 
   console.log('Awake Done.');
