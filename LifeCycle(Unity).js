@@ -25,5 +25,10 @@ function Start(){
 }
 
 function Update(){
-  //console.log('deltatime' + (1/PS));
+  Frame(1/PS);
 }
+
+function Frame(ms){
+  console.log(`FPS: PS(${ms}ms)`);
+}
+////////////////
