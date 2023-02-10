@@ -29,6 +29,10 @@ function Update(){
 }
 
 function Frame(ms){
-  console.log(`FPS: PS(${ms}ms)`);
+  console.log(`FPS: ${PS}(${ms}ms)`);
+}
+
+function PS_set(value){
+  PS = value;
 }
 ////////////////
